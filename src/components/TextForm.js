@@ -47,9 +47,11 @@ export default function TextForm(props) {
     }
 
     const onCopyClipboard = () => {
-        let text = document.getElementById("myBox");
-        text.select();
-        navigator.clipboard.writeText(text.value);
+        // * commented cod eis for select all text
+        // let text = document.getElementById("myBox");
+        // text.select();                
+        // navigator.clipboard.writeText(text.value);
+        navigator.clipboard.writeText(text);
         props.showAlert("Copied to Clipboard!", "success");
     }
 
@@ -83,19 +85,20 @@ export default function TextForm(props) {
                         }}
                     ></textarea>
                 </div>
-                <button className="btn btn-primary" onClick={onUpperCaseBtn}>Convert to Upper Case</button>
-                <button className="btn btn-primary mx-3" onClick={onLowerCaseBtn}>Convert to Lower Case</button>
-                <button className="btn btn-primary" onClick={onClearBtn}>Clear All</button>
-                <button className="btn btn-primary mx-3" onClick={onExtractEmails}>Extract Emails</button>
-                <button className="btn btn-info" onClick={onDownloadText}>Download Text File</button>
-                <button className="btn btn-danger mx-3" onClick={onDownloadPdf}>Download pdf</button>
-                <button className="btn btn-primary" onClick={onCopyClipboard}>Copy to Clipboard</button>
-                <button className="btn btn-primary mx-1" onClick={onRemoveExtraSpace}>Remove Extra Space</button>
+                <button disabled={text.length === 0} style={{ border: '1px solid white' }} className="btn btn-primary mx-1 my-1" onClick={onUpperCaseBtn}>Convert to Upper Case</button>
+                <button disabled={text.length === 0} style={{ border: '1px solid white' }} className="btn btn-primary mx-1 my-1" onClick={onLowerCaseBtn}>Convert to Lower Case</button>
+                <button disabled={text.length === 0} style={{ border: '1px solid white' }} className="btn btn-primary mx-1 my-1" onClick={onClearBtn}>Clear All</button>
+                <button disabled={text.length === 0} style={{ border: '1px solid white' }} className="btn btn-primary mx-1 my-1" onClick={onExtractEmails}>Extract Emails</button>
+                <button disabled={text.length === 0} style={{ border: '1px solid white' }} className="btn btn-info mx-1 my-1" onClick={onDownloadText}>Download Text File</button>
+                <button disabled={text.length === 0} style={{ border: '1px solid white' }} className="btn btn-danger mx-1 my-1" onClick={onDownloadPdf}>Download pdf</button>
+                <button disabled={text.length === 0} style={{ border: '1px solid white' }} className="btn btn-primary mx-1 my-1" onClick={onCopyClipboard}>Copy to Clipboard</button>
+                <button disabled={text.length === 0} style={{ border: '1px solid white' }} className="btn btn-primary mx-1 my-1" onClick={onRemoveExtraSpace}>Remove Extra Space</button>
             </div>
             <div className="container my-3" style={{ color: props.mode === 'light' ? '#212529' : 'white' }}>
                 <h1 >Your text summary</h1>
-                <p >{text === '' ? 0 : text.trim().split(/\s+/).length} words and {text.length} characters</p>
-                <p >{0.008 * text.trim().split(/\s+/).length} Minutes read</p>
+                {/* <p >{text === '' ? 0 : text.trim().split(/\s+/).length} words and {text.length} characters</p> */}
+                <p >{text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} words and {text.length} characters</p>
+                <p >{text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} Minutes read</p>
                 <h2 >Preview</h2>
                 <p >{text}</p>
             </div>
