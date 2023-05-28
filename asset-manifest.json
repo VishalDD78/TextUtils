@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/VishalDD78/TextUtils/static/css/main.073c9b0a.css",
-    "main.js": "/VishalDD78/TextUtils/static/js/main.691ae4dc.js",
-    "static/js/498.71d2491c.chunk.js": "/VishalDD78/TextUtils/static/js/498.71d2491c.chunk.js",
-    "static/js/703.c2b9f0be.chunk.js": "/VishalDD78/TextUtils/static/js/703.c2b9f0be.chunk.js",
-    "static/js/168.cffda5d8.chunk.js": "/VishalDD78/TextUtils/static/js/168.cffda5d8.chunk.js",
-    "static/js/787.28cb0dcd.chunk.js": "/VishalDD78/TextUtils/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/VishalDD78/TextUtils/index.html",
-    "main.073c9b0a.css.map": "/VishalDD78/TextUtils/static/css/main.073c9b0a.css.map",
-    "main.691ae4dc.js.map": "/VishalDD78/TextUtils/static/js/main.691ae4dc.js.map",
-    "498.71d2491c.chunk.js.map": "/VishalDD78/TextUtils/static/js/498.71d2491c.chunk.js.map",
-    "703.c2b9f0be.chunk.js.map": "/VishalDD78/TextUtils/static/js/703.c2b9f0be.chunk.js.map",
-    "168.cffda5d8.chunk.js.map": "/VishalDD78/TextUtils/static/js/168.cffda5d8.chunk.js.map",
-    "787.28cb0dcd.chunk.js.map": "/VishalDD78/TextUtils/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/TextUtils/static/css/main.62a18e5f.css",
+    "main.js": "/TextUtils/static/js/main.2c0405fd.js",
+    "static/js/498.71d2491c.chunk.js": "/TextUtils/static/js/498.71d2491c.chunk.js",
+    "static/js/703.c2b9f0be.chunk.js": "/TextUtils/static/js/703.c2b9f0be.chunk.js",
+    "static/js/168.cffda5d8.chunk.js": "/TextUtils/static/js/168.cffda5d8.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/TextUtils/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/TextUtils/index.html",
+    "main.62a18e5f.css.map": "/TextUtils/static/css/main.62a18e5f.css.map",
+    "main.2c0405fd.js.map": "/TextUtils/static/js/main.2c0405fd.js.map",
+    "498.71d2491c.chunk.js.map": "/TextUtils/static/js/498.71d2491c.chunk.js.map",
+    "703.c2b9f0be.chunk.js.map": "/TextUtils/static/js/703.c2b9f0be.chunk.js.map",
+    "168.cffda5d8.chunk.js.map": "/TextUtils/static/js/168.cffda5d8.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/TextUtils/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.691ae4dc.js"
+    "static/css/main.62a18e5f.css",
+    "static/js/main.2c0405fd.js"
   ]
 }
